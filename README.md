@@ -71,10 +71,9 @@ Màn hình hiển thị thông tin sinh viên:
    ```
 2. Mở **Android Studio** và import project.
 3. Chạy ứng dụng trên **Emulator** hoặc **thiết bị thật**.
-4. Nhập câu cần kiểm tra.
 
 
 ---
 
 ## 📩 8. Liên hệ
-Nếu có thắc mắc hoặc góp ý, vui lòng liên hệ qua email: `quanh.0807@gmail.com` & `trungpspy@gmail.com`.
+Nếu có thắc mắc hoặc góp ý, vui lòng liên hệ qua email: `trungpspy@gmail.com`.
