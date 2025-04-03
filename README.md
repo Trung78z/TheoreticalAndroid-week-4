@@ -8,7 +8,7 @@
 ---
 
 ##  🎬 Xem tại Youtube
-[![Watch the video](https://img.youtube.com/vi/D4HyrOfUDK8/maxresdefault.jpg)](https://youtube.com/shorts/D4HyrOfUDK8)
+[![Watch the video](https://img.youtube.com/vi/1UXgzoxnslg/maxresdefault.jpg)](https://youtube.com/shorts/1UXgzoxnslg)
 
 
 
@@ -41,8 +41,8 @@ Khi mở dự án, bạn sẽ thấy giao diện chính gồm **XML Layouts** v�
 ## 🎨 5. Thiết kế giao diện (Layout)
 
 ### 🔹 Main Activity
-Màn hình chính giới thiệu thông tin ứng dụng
-![Main Activity UI](images/5.png)
+Màn hình chính giới thiệu thông tin ứng dụng và các tính năng được tích hợp
+![Main Activity UI](images/a2.png)
 
 ### 🔹 GetInfo Activity (Xử lí input)
 Màn hình hiển thị nơi nhập thông tin:
@@ -62,6 +62,22 @@ Màn hình hiển thị thông tin sinh viên:
 5. **Khi thông tin đã đầy đủ và nút nhấn được kích hoạt sẽ chuyển tiếp sang màn hình show thông tin**
 6. **Tại mỗi màn hình thu thập thông tin và hiển thị thông tin đều có nút trở lại trang chủ. Khi nhấn nút thì sẽ quay lại trang chủ và mọi thông tin đều được xóa**
 ---
+
+## Thông tin thêm và các hoạt động giữa các tính năng!
+1. Sử dụng chức năng nghe gọi:
+```
+   Khi người dùng nhấn vào nhút nhấn call thì hệ thống sẽ tự dộng chuyển tiếp tới màn hình gọi trên điện thoại với thông tin số điện thoại được tích hợp sẵn trên ứng dụng(Ở đây sử dụng số mặc định '+1234567890')
+```
+2. Sử dụng chức năng nhắn tin(sms)
+```
+   Từ màn hình ứng dụng khi người dùng nhấn vào nút nhận sms thì hệ thống sẽ chuyển tiếp tới trang tin nhắn của hệ thống kèm theo message và số điện thoại được tích hợp sẵn trong hệ thống(mặc định được gửi tới ứng dụng tin nhắn là 'Hello, this is a test message!' và số điện thoại cần gửi là '+1234567890')
+```
+3. Sử dụng chức năng camera 
+```
+   Khi người dùng nhấn vào nút camera thì ứng dụng sẽ chuyển tiếp tới ứng dụng camera của hệ thống. Khi hệ thống có camera thì thiết bị sẽ tự động mở lên, khi không có thiết bị thì hệ thống sẽ không mở lên mà sẽ hiện thị thông báo "Can't found camera"
+```
+### !!! Lưu ý quan trọng !!!
+> **Note:** Trong ứng dụng, nếu thiết bị không có camera tích hợp sẵn, sẽ có thông báo "Không tìm thấy camera". Khi người dùng lần đầu truy cập vào camera, ứng dụng sẽ yêu cầu quyền truy cập camera từ người dùng.
 
 ## 🛠️ 7. Cách chạy ứng dụng
 
