@@ -8,7 +8,7 @@
 ---
 
 ##  🎬 Xem tại Youtube
-[![Watch the video](https://img.youtube.com/vi/1UXgzoxnslg/maxresdefault.jpg)](https://youtube.com/shorts/1UXgzoxnslg)
+[![Watch the video](https://img.youtube.com/vi/cjbWnHLpAec/maxresdefault.jpg)](https://youtube.com/shorts/cjbWnHLpAec)
 
 
 
@@ -77,7 +77,7 @@ Màn hình hiển thị thông tin sinh viên:
    Khi người dùng nhấn vào nút camera thì ứng dụng sẽ chuyển tiếp tới ứng dụng camera của hệ thống. Khi hệ thống có camera thì thiết bị sẽ tự động mở lên, khi không có thiết bị thì hệ thống sẽ không mở lên mà sẽ hiện thị thông báo "Can't found camera"
 ```
 ### !!! Lưu ý quan trọng !!!
-> **Note:** Trong ứng dụng, nếu thiết bị không có camera tích hợp sẵn, sẽ có thông báo "Không tìm thấy camera". Khi người dùng lần đầu truy cập vào camera, ứng dụng sẽ yêu cầu quyền truy cập camera từ người dùng.
+> **Note:** Khi người dùng lần đầu truy cập vào camera, ứng dụng sẽ yêu cầu quyền truy cập camera từ người dùng.
 
 ## 🛠️ 7. Cách chạy ứng dụng
 

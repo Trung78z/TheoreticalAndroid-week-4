@@ -1,14 +1,13 @@
 package com.hcmus.information;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-import android.Manifest;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -73,12 +72,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openCamera() {
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivityForResult(intent, CodeActivity.REQUEST_IMAGE_CAPTURE);
-        } else {
-            Toast.makeText(this, "Can't found Camera", Toast.LENGTH_SHORT).show();
-        }
+        Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+        startActivityForResult(intent, CodeActivity.REQUEST_IMAGE_CAPTURE);
     }
 
 
