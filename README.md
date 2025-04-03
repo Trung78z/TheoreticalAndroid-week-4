@@ -92,4 +92,4 @@ Màn hình hiển thị thông tin sinh viên:
 ---
 
 ## 📩 8. Liên hệ
-Nếu có thắc mắc hoặc góp ý, vui lòng liên hệ qua email: `trungpspy@gmail.com`.
+Nếu có thắc mắc hoặc góp ý, vui lòng liên hệ qua email: `quanh.0807@gmail.com` & `trungpspy@gmail.com`.
