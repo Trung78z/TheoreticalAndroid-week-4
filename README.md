@@ -1,6 +1,6 @@
-# 📱 Android App: Ứng dụng Android thu thập thông tin của sinh viên
+# 📱 Android App: Ứng dụng Android thu thập thông tin của sinh viên và các tính năng gọi, nhắn tin, camera
 
-Ứng dụng Android thu thập dữ liệu về sinh viên với mục đích đánh giá khả năng và triển vọng học thuật của họ trong tương lai.
+Ứng dụng Android thu thập dữ liệu về sinh viên với mục đích đánh giá khả năng và triển vọng học thuật của họ trong tương lai và xử lí các tính năng cơ bản như chuyển tiếp sang cuộc gọi, nhắn tin, sử dụng camera.
 
 ---
 ## 🎬 Chương trình ứng dụng và kiểm thử

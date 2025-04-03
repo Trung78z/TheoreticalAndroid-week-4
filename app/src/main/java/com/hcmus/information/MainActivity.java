@@ -2,7 +2,6 @@ package com.hcmus.information;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.hardware.Camera;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -36,9 +35,14 @@ public class MainActivity extends AppCompatActivity {
         Button smsButton = findViewById(R.id.smsButton);
         Button cameraButton = findViewById(R.id.cameraButton);
         cameraButton.setOnClickListener(v -> {
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, CodeActivity.REQUEST_CAMERA_PERMISSION);
+
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+                    != PackageManager.PERMISSION_GRANTED) {
+
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.CAMERA}, CodeActivity.REQUEST_CAMERA_PERMISSION);
             } else {
+
                 openCamera();
             }
         });
@@ -69,23 +73,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openCamera() {
-        try {
-            Camera camera = Camera.open();
-            if (camera != null) {
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                if (intent.resolveActivity(getPackageManager()) != null) {
-                    startActivityForResult(intent, CodeActivity.REQUEST_IMAGE_CAPTURE);
-                } else {
-                    Toast.makeText(this, "Không tìm thấy ứng dụng Camera", Toast.LENGTH_SHORT).show();
-                }
-            } else {
-                Toast.makeText(this, "Failed to open camera", Toast.LENGTH_SHORT).show();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            Toast.makeText(this, "Failed to open camera", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(intent, CodeActivity.REQUEST_IMAGE_CAPTURE);
+        } else {
+            Toast.makeText(this, "Can't found Camera", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     private void onClick() {
         Intent intent = new Intent(this, EditInfoActivity.class);
