@@ -83,7 +83,7 @@ Màn hình hiển thị thông tin sinh viên:
 
 1. Clone repo này về máy:
    ```sh
-   git clone https://github.com/Trung78z/AndroidPractice1.git
+   git clone https://github.com/Trung78z/TheoreticalAndroid-week-4.git
    ```
 2. Mở **Android Studio** và import project.
 3. Chạy ứng dụng trên **Emulator** hoặc **thiết bị thật**.
