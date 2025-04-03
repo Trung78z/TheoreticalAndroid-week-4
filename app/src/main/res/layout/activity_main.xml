@@ -8,14 +8,6 @@
     android:background="@color/light_blue"
     tools:context=".MainActivity">
 
-    <!-- Tiêu đề chính -->
-
-    <!-- Thông tin phụ -->
-
-    <!-- Button Gửi thông tin -->
-
-    <!-- Hình ảnh mô tả -->
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
@@ -64,7 +56,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintVertical_bias="0.115" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -77,5 +69,65 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/infoTextView" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendInfo"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/callButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/purple_500"
+            android:paddingHorizontal="24dp"
+            android:text="Call"
+            app:cornerRadius="16dp"
+            app:icon="@drawable/ic_call"
+            app:iconGravity="start"
+            app:iconPadding="12dp"
+            app:iconSize="24sp"
+            app:iconTintMode="multiply" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/smsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/teal_700"
+            android:paddingHorizontal="24dp"
+            android:text="Send SMS"
+            app:cornerRadius="16dp"
+            app:icon="@drawable/ic_message"
+            app:iconGravity="start"
+            app:iconPadding="12dp"
+            app:iconSize="24sp"
+            app:iconTintMode="multiply" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange_700"
+            android:paddingHorizontal="24dp"
+            android:text="Camera"
+            app:cornerRadius="16dp"
+            app:icon="@drawable/ic_camera"
+            app:iconGravity="start"
+            app:iconPadding="12dp"
+            app:iconSize="24sp"
+            app:iconTint="@color/yellow"
+            app:iconTintMode="multiply" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
